@@ -1,0 +1,14 @@
+[project]
+authors = ["Étienne VALLETTE d'OSIA <etienne.vallette.dosia@fabernovel.ey.com>"]
+channels = ["conda-forge", "https://conda.modular.com/max-nightly"]
+description = "Add a short description here"
+name = "2024.mojo"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+test = "mojo test"
+test-ptn = "./test-with-pattern.sh"
+
+[dependencies]
+max = ">=24.6.0.dev2024120105,<25"
